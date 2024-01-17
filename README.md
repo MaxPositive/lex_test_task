@@ -78,3 +78,7 @@ FROM short_names
 WHERE 
     SUBSTRING(full_names.name FROM 'nazvanie[0-9]+') = short_names.name;
 ```
+
+Также есть скрипт, который можно запустить через команду:
+```docker exec -it api python src/database_script.py```
+
