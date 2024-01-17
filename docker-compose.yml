@@ -16,3 +16,13 @@ services:
       - "6380:6379"
     hostname: redis
     container_name: redis
+  postgres:
+    image: postgres:alpine
+    ports:
+      - "5433:5432"
+    hostname: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
