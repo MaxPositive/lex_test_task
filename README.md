@@ -8,6 +8,7 @@
 
 Если адрес уже существует - возвращает ```status: 409``` и сообщение:
 ```Address already exists```
+
 2. ``` GET /addresses``` - в ```query параметре``` передается ```phone:str```.
 Возвращает ```address:str```.
 
